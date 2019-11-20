@@ -1,6 +1,29 @@
 .gameCell {
-  width: 20px;
-  height: 20px;
-  padding:20px;
-  color:red;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  float: left;
+}
+.notMine {
+  background-color: lightblue;
+  text-align: center;
+}
+.mine { background-color: pink; }
+.mineFlagged { background-color: green; }
+.mineHit { background-color: red; }
+.hover { background-color: gray; }
+
+#gameOuterBox{
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+}
+#gameInnerBox{
+  background-color: black;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }

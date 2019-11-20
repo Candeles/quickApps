@@ -1,18 +1,16 @@
 <head>
   <title>Minesweeper Redux</title>
-  <meta
-    name="keywords"
-    charset="UTF-8"
-    content=""
-  />
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="./msRedux.css">
 </head>
 <body>
-  Game Width <input type="number" name="gameW">
-  Game Height <input type="number" name="gameH">
-  Mine Percentage (.01-.99) <input type="" name="mineP">
+  Game Width (1-100)<input type="number" min="1" max="100" id="inputW">
+  Game Height (1-100)<input type="number" min="1" max="100" id="inputH">
+  Mine Percentage (1-99) <input type="number" min="1" max="99" id="mineP">
+
   <button type="button" id="loadGame">Make Game</button>
-  <div id="gameBox"></div>
+
+  <div id="gameOuterBox"></div>
 </body>
 <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="./msRedux.js"></script>
